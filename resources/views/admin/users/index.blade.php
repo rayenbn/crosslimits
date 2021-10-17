@@ -108,7 +108,7 @@
 
       if (confirm('{{ trans('global.areYouSure') }}')) {
         $.ajax({
-          headers: {'x-csrf-token': _token},
+          headers: {'x-csrf-token': $('meta[name="csrf-token"]').attr('content')},
           method: 'POST',
           url: config.url,
           data: { ids: ids, _method: 'DELETE' }})

@@ -59,6 +59,7 @@
                 <div class="collection-content">
                     <div class="col-md-4 col-sm-12 col-xs-12 box">											
                         <div class="women-content">
+                            @if(isset($categories[0]))
                             <div class="masonry-small move_to_center" style="">
                                 <div class="price-table-img">
                                     <img alt="" src="/storage/images/category_image/{{ $categories[0]['category_image'] ?? ''}}">
@@ -71,6 +72,8 @@
                                     <!-- <span>From <span> $59</span></span> -->
                                 </div>
                             </div>
+                            @endif
+                            @if(isset($categories[3]))
                             <div class="masonry-lagar move_to_center" style="">
                                 <div class="price-table-img">
                                     <img alt="" src="/storage/images/category_image/{{ $categories[3]['category_image'] ?? ''}}">
@@ -89,10 +92,12 @@
                                     </div>
                                 </div>
                             </div>
+                            @endif
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12 box">											
                         <div class="man-content">
+                            @if(isset($categories[1]))
                             <div class="masonry-lagar move_to_center" >
                                 <div class="price-table-img">
                                     <img alt="" src="/storage/images/category_image/{{ $categories[1]['category_image'] ?? ''}}">
@@ -111,6 +116,8 @@
                                     </div>
                                 </div>
                             </div>
+                            @endif
+                            @if(isset($categories[4]))
                             <div class="masonry-small move_to_center">
                                 <div class="price-table-img">
                                     <img alt="" src="/storage/images/category_image/{{ $categories[4]['category_image'] ?? ''}}">
@@ -122,11 +129,13 @@
                                     <p>{{ $categories[4]['desc'] ?? ''}}</p>
                                     <!-- <span>From <span> $59</span></span> -->
                                 </div>
-                            </div>												
+                            </div>
+                            @endif
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 col-xs-12 box">											
                         <div class="collect-content">
+                            @if(isset($categories[2]))
                             <div class="masonry-small move_to_center">
                                 <div class="price-table-img">
                                     <img alt="" src="/storage/images/category_image/{{ $categories[2]['category_image'] ?? ''}}">
@@ -139,6 +148,8 @@
                                     <!-- <span>From <span> $59</span></span> -->
                                 </div>
                             </div>	
+                            @endif
+                            @if(isset($categories[5]))
                             <div class="masonry-lagar move_to_center">													
                                 <div class="price-table-img">
                                     <img alt="" src="/storage/images/category_image/{{ $categories[5]['category_image'] ?? ''}}">
@@ -156,7 +167,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>																							
+                            </div>	
+                            @endif
                         </div>
                     </div>
                 </div>

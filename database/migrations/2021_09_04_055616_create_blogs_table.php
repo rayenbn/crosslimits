@@ -20,7 +20,6 @@ class CreateBlogsTable extends Migration
             $table->longText('text')->nullable();
             $table->bigInteger('views')->default(0);
             $table->String('created_by', 255)->nullable();
-            $table->String('created_by', 255)->nullable();
             $table->timestamps();
         });
     }
