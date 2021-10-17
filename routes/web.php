@@ -81,9 +81,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
 
     Route::resource('category', 'categoryController');
 
-    Route::delete('blogs/destroy', 'BlogController@massDestroy')->name('blogs.massDestroy');
+    Route::delete('blogs/destroy', 'blogController@massDestroy')->name('blogs.massDestroy');
 
-    Route::resource('blogs', 'BlogController');
+    Route::resource('blogs', 'blogController');
 
     Route::delete('color/destroy', 'colorController@massDestroy')->name('color.massDestroy');
 

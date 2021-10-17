@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="cont-headding" style="float: none;">
                                         <h5>Telephone </h5>
-                                        <p>{{ $contactus->phone ?? ''}}  - {{ $contactus->mobile }}</p>
+                                        <p>{{ $contactus->phone ?? ''}}  - {{ $contactus->mobile ?? ''}}</p>
                                     </div>
                                 </li>
                             </ul>
