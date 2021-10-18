@@ -33,7 +33,7 @@ const mix = require('laravel-mix');
       'public/theme/js/classie.js',
       'public/theme/js/jquery.custombox.js',
       'public/theme/js/dropdown.js',
-      'public/theme/js/main.js',
+      // 'public/theme/js/main.js',
       ], 'public/js')
       .autoload({
       jquery: ['$', 'window.jQuery']

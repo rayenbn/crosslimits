@@ -212,7 +212,7 @@
                         </div>
                     </div>
                     
-                    <div class="overlay-loading"><span class="loading"><img src="{{ asset('theme/images/loading-black.GIF')}}" alt=""/></span></div>    
+                    <div class="overlay-loading"><span class="loading"><img src="{{ asset('theme/images/loading-black.gif')}}" alt=""/></span></div>    
 
                     <!-- GALLERY CONTENT -->
                     <!-- GALLERY CONTENT -->

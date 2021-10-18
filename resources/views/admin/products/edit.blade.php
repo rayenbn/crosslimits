@@ -254,7 +254,7 @@
         if (confirm("{{ trans('global.areYouSure') }}")) {
             $.ajax({
                 headers: {
-                    'x-csrf-token': _token
+                    'x-csrf-token': $('meta[name="csrf-token"]').attr('content')
                 },
                 method: 'DELETE',
                 url: "/admin/products/image/" + imageid,

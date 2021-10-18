@@ -73697,68 +73697,6 @@ jQuery.extend(jQuery.easing, {
 
 /***/ }),
 
-/***/ "./public/theme/js/main.js":
-/*!*********************************!*\
-  !*** ./public/theme/js/main.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-(function () {
-  "use strict";
-
-  var bodyEl = document.body,
-      content = document.querySelector('.content-wrapper'),
-      openbtn = document.getElementById('open-button'),
-      closebtn = document.getElementById('close-button'),
-      isOpen = false;
-
-  function init() {
-    initEvents();
-  }
-
-  function initEvents() {
-    openbtn.addEventListener('click', toggleMenu);
-
-    if (closebtn) {
-      closebtn.addEventListener('click', toggleMenu);
-    } // close the menu element if the target it´s not the menu element or one of its descendants..
-
-
-    content.addEventListener('click', function (ev) {
-      var target = ev.target;
-
-      if (isOpen && target !== openbtn) {
-        toggleMenu();
-      }
-    });
-  }
-
-  function toggleMenu() {
-    if (isOpen) {
-      classie.remove(bodyEl, 'show-menu');
-    } else {
-      classie.add(bodyEl, 'show-menu');
-    }
-
-    isOpen = !isOpen;
-  }
-
-  init();
-})();
-
-/***/ }),
-
 /***/ "./public/theme/js/masterslider.min.js":
 /*!*********************************************!*\
   !*** ./public/theme/js/masterslider.min.js ***!
@@ -81948,9 +81886,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./public/theme/js/jquery.min.js ./public/theme/js/jquery-ui.js ./public/theme/js/intlTelInput.js ./public/theme/js/utils.js ./public/theme/js/jquery.easing.1.3.js ./public/theme/js/waypoints.js ./public/theme/js/parallax/jquery.parallax-1.1.3.js ./public/theme/js/parallax/jquery.transform2d.js ./public/theme/js/parallax/script.js ./public/theme/js/parallax/parallax.js ./public/theme/js/template.js ./public/theme/js/masterslider.min.js ./public/theme/js/banner.js ./public/theme/js/owl.carousel.min.js ./public/theme/js/theme.js ./public/theme/js/classie.js ./public/theme/js/jquery.custombox.js ./public/theme/js/dropdown.js ./public/theme/js/main.js ./resources/sass/app.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./public/theme/js/jquery.min.js ./public/theme/js/jquery-ui.js ./public/theme/js/intlTelInput.js ./public/theme/js/utils.js ./public/theme/js/jquery.easing.1.3.js ./public/theme/js/waypoints.js ./public/theme/js/parallax/jquery.parallax-1.1.3.js ./public/theme/js/parallax/jquery.transform2d.js ./public/theme/js/parallax/script.js ./public/theme/js/parallax/parallax.js ./public/theme/js/template.js ./public/theme/js/masterslider.min.js ./public/theme/js/banner.js ./public/theme/js/owl.carousel.min.js ./public/theme/js/theme.js ./public/theme/js/classie.js ./public/theme/js/jquery.custombox.js ./public/theme/js/dropdown.js ./resources/sass/app.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -81973,7 +81911,6 @@ __webpack_require__(/*! C:\xampp\htdocs\crosslimits-laravel\public\theme\js\them
 __webpack_require__(/*! C:\xampp\htdocs\crosslimits-laravel\public\theme\js\classie.js */"./public/theme/js/classie.js");
 __webpack_require__(/*! C:\xampp\htdocs\crosslimits-laravel\public\theme\js\jquery.custombox.js */"./public/theme/js/jquery.custombox.js");
 __webpack_require__(/*! C:\xampp\htdocs\crosslimits-laravel\public\theme\js\dropdown.js */"./public/theme/js/dropdown.js");
-__webpack_require__(/*! C:\xampp\htdocs\crosslimits-laravel\public\theme\js\main.js */"./public/theme/js/main.js");
 module.exports = __webpack_require__(/*! C:\xampp\htdocs\crosslimits-laravel\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
