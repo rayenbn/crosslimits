@@ -82,7 +82,7 @@
 	<script type="text/javascript" src="{{ asset('theme/js/classie.js')}}"></script>
 	<script type="text/javascript" src="{{ asset('theme/js/jquery.custombox.js')}}"></script>
 	<!-- <script type="text/javascript" src="{{ asset('theme/js/dropdown.js')}}"></script> -->
-	<!-- <script type="text/javascript" src="{{ asset('theme/js/main.js')}}"></script> -->
+	<script type="text/javascript" src="{{ asset('theme/js/main.js')}}"></script>
 	
 
 	<script type="text/javascript">
