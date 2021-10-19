@@ -149,7 +149,6 @@
     <script src="{{ asset('adminlte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 
     <script src="{{ asset('adminlte/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('theme/js/main.js')}}"></script>
 
     <script>
         $(function() {

@@ -81107,7 +81107,7 @@ http://www.gnu.org/licenses/gpl.html
 
 /***/ }),
 
-/***/ "./public/theme/js/waypoints.js":
+/***/ "/../public/theme/js/waypoints.js":
 /*!**************************************!*\
   !*** ./public/theme/js/waypoints.js ***!
   \**************************************/
