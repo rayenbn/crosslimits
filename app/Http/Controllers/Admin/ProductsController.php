@@ -149,7 +149,7 @@ class ProductsController extends Controller
             Storage::put('public/products/thumbnail/'. $filenametostore, fopen($image, 'r+'));
             //Resize image here
             $thumbnailpath = 'storage/products/thumbnail/'.$filenametostore;
-            $img = Image::make($thumbnailpath)->resize(470, 600)->save($thumbnailpath);
+            $img = Image::make($thumbnailpath)->resize(470, 488)->save($thumbnailpath);
             $path = $filenametostore;
         }else {
             $product = Product::find($id);
@@ -202,7 +202,7 @@ class ProductsController extends Controller
                 Storage::put('public/products/thumbnail/'. $filenametostore, fopen($image, 'r+'));
                 //Resize image here
                 $thumbnailpath = 'storage/products/thumbnail/'.$filenametostore;
-                $img = Image::make($thumbnailpath)->resize(470, 600)->save($thumbnailpath);
+                $img = Image::make($thumbnailpath)->resize(470, 488)->save($thumbnailpath);
                
                 ProductsImage::create([
                     'productImages' => $filenametostore,
