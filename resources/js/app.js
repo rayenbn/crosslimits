@@ -7,7 +7,7 @@
  import VueSweetalert2 from 'vue-sweetalert2';
  import 'sweetalert2/dist/sweetalert2.min.css';
 require('./bootstrap');
-window.Vue = require('vue');
+window.Vue = require("vue").default;
 
 /**
  * The following block of code may be used to automatically register your
