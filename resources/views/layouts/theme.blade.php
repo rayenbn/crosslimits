@@ -66,8 +66,8 @@
 	<script type="text/javascript" src="{{ asset('theme/js/jquery-2.1.0.min.js')}}"></script>
 	<script src="{{ mix('/js/app.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('theme/js/bootstrap.min.js')}}"></script>
-	<!-- <script type="text/javascript" src="{{ asset('theme/js/jquery.min.js')}}"></script>
-	<!-- <script type="text/javascript" src="{{ asset('theme/js/jquery-ui.js')}}"></script> --> -->
+	<!-- <script type="text/javascript" src="{{ asset('theme/js/jquery.min.js')}}"></script>-->
+	<!-- <script type="text/javascript" src="{{ asset('theme/js/jquery-ui.js')}}"></script> --> 
 	<script type="text/javascript" src="{{ asset('theme/js/jquery.easing.1.3.js')}}"></script>
 	<script type="text/javascript" src="{{ asset('theme/js/waypoints.js')}}"></script>
 	<script type="text/javascript" src="{{ asset('theme/js/parallax/jquery.parallax-1.1.3.js')}}"></script>

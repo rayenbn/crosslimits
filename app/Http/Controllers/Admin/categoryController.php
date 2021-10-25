@@ -57,6 +57,7 @@ class categoryController extends Controller
 
         $category_data = [
             'category_name'       => $request->input('category_name'),
+            'order'               => $request->input('order'),
             'category_image'      => $path,
             'slug'                => Str::slug($request->input('category_name'))
             
@@ -113,6 +114,7 @@ class categoryController extends Controller
 
         $category_data = [
             'category_name'       => $request->input('category_name'),
+            'order'               => $request->input('order'),
             'category_image'      => $path,
             'slug'                => Str::slug($request->input('category_name'))
          ];

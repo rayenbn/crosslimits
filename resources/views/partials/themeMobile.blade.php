@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 			<a href="{{ url('/') }}">Home</a>
 		</li>
 		<li class="dropdown">
-			<a href="{{ route('aboutus') }}">About CrossLimits!</a>
+			<a href="{{ route('aboutus') }}">About Us</a>
 		</li>
 		<li class="dropdown">
 		 <a href="{{ route('shop') }}">Shop</a> 

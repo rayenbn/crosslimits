@@ -41,8 +41,14 @@
             <div class="meta-box">
                 <div class="price-box">	
                    
-                    <span class="special-price">Unit Price: {{ totalprice }}</span>
-                    <span class="special-price">Total Price: {{ totalprice * quantity }}</span>
+                    <span class="special-price">Unit Price: 
+                        <span v-if="hasAuthUser">{{ totalprice }}</span>
+                        <span v-else><a href="/login">Login to see price</a></span>
+                    </span>
+                    <span class="special-price">Total Price:  
+                        <span v-if="hasAuthUser">{{ totalprice * quantity }}</span>
+                        <span v-else><a href="/login">Login to see price</a></span>
+                    </span>
                     
                 </div>
                 <div class="rating-box">

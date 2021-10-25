@@ -27,6 +27,13 @@
                     </div>
 
                     <div class="col-md-8">
+                        <div class="form-group {{ $errors->has('order') ? 'has-error' : '' }}">
+                            <label for="order">Order*</label>
+                            <input type="number" min="0" id="order" name="order" class="form-control" value="{{ old('order', isset($category) ? $category->order : '') }}">
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8">
                         <div class="form-group row">
                             <label for="category_image" >{{ trans('global.category_image') }}</label>
                             <div class="col-md-12">

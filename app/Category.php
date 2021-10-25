@@ -14,7 +14,8 @@ class Category extends Model
         'desc',
         'slug',
         'parent_category_id',
-        'position'
+        'position',
+        'order'
     ];
     
     /**

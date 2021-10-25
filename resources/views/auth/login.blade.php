@@ -29,7 +29,7 @@
                             <div class="title">Log in</div>
                             <div class="box">
                                 <p>
-                                    If you have shopped with us before, please enter your details in the boxes below. If you are a new customer register new account <a href="#" style="color: crimson;">here.</a>
+                                    If you have shopped with us before, please enter your details in the boxes below. If you are a new customer register new account <a href="{{ route('register') }}" style="color: crimson;">here.</a>
                                 </p>
                                 <form method="POST" action="{{ route('login') }}">
                                     {{ csrf_field() }}

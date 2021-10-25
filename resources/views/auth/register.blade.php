@@ -30,7 +30,7 @@
                             <div class="title">{{ __('Register') }}</div>
                             <div class="box">
                                 <p>
-                                    Register new account to discover our products, services and much more. If you already have an account please login <a href="#" style="color: crimson;">here.</a>
+                                    Register new account to discover our products, services and much more. If you already have an account please login <a href="{{ route('login') }}" style="color: crimson;">here.</a>
                                 </p>
                                 <form method="POST" action="{{ route('register') }}">
                                     @csrf

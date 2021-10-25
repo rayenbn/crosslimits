@@ -8,12 +8,12 @@
         <div class="container">
             <div class="row">							
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 10px;">
                         <div class="col-md-12 price-table-content">
                             <div class="price-table-img">
                                 <img alt="" src="/storage/products/{{ $home_page->sec2_image1 ?? ''}}">
                             </div>
-                            <div class="price-table-text">
+                            <div class="price-table-text" style="color: #fff;">
                                 {!! $home_page->sec2_text1 ?? ''!!}
                                 <div class="border-bottom"></div>
                                 <p>{{ $home_page->sec2_desc1 ?? '' }}</p>
@@ -21,12 +21,12 @@
                             </div>
                         </div>							
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 10px;">
                         <div class="col-md-12 price-table-content">
                             <div class="price-table-img">
                                 <img alt="" src="/storage/products/{{ $home_page->sec2_image2 ?? ''}}">
                             </div>
-                            <div class="price-table-text">
+                            <div class="price-table-text" style="color: #fff;">
                                 {!! $home_page->sec2_text2 ?? ''!!}
                                 <div class="border-bottom"></div>
                                 <p>{{ $home_page->sec2_desc2 ?? '' }}</p>
@@ -34,12 +34,12 @@
                             </div>
                         </div>							
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-md-4 col-sm-12 col-xs-12" style="margin-bottom: 10px;">
                         <div class="col-md-12 price-table-content">
                             <div class="price-table-img">
                                 <img alt="" src="/storage/products/{{ $home_page->sec2_image3 ?? ''}}">
                             </div>
-                            <div class="price-table-text">
+                            <div class="price-table-text" style="color: #fff;">
                                 {!! $home_page->sec2_text3 ?? ''!!}
                                 <div class="border-bottom"></div>
                                 <p>{{ $home_page->sec2_desc3 ?? '' }} </p>
