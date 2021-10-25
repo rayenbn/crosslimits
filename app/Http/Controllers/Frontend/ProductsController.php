@@ -20,7 +20,7 @@ class ProductsController extends Controller
     {
         $products = Product::paginate(12);
         $productpage = ProductPage::first();
-        $categories = Category::all();
+        $categories = Category::orderBy('order','asc')->get();
         return view('frontend.products', compact('products', 'productpage', 'categories'));
     }
 
@@ -28,7 +28,7 @@ class ProductsController extends Controller
     {
         $products = $category->products();
         $productpage = ProductPage::first();
-        $categories = Category::all();
+        $categories = Category::orderBy('order','asc')->get();
         return view('frontend.products', compact('products', 'productpage', 'categories'));
     }
 
