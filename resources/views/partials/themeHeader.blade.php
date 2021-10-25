@@ -11,10 +11,10 @@ $global_settings = Controller::global_settings();
 	<header id="header" class="header header-container alt reveal">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 col-sm-5 col-xs-5 logo">
-					<a href="/"><img src="/storage/logo/{{ $global_settings->logo ?? ''}}" alt="CrossLimits factory"></a>
+				<div class="col-md-4 col-sm-6 col-xs-6 logo">
+					<a href="/"><img src="/storage/logo/{{ $global_settings->logo ?? ''}}" style="width: 370px;" alt="CrossLimits factory"></a>
 				</div>
-				<div class="col-md-7 nav-container">
+				<div class="col-md-6 nav-container">
 					<nav class="megamenu collapse navbar-collapse bs-navbar-collapse navbar-right mainnav col-md-10" role="navigation">
 						<ul class="nav-menu">
 							<li class="{{ request()->routeIs('home') ? 'selected active' : '' }}">

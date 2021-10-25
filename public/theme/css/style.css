@@ -246,7 +246,7 @@ div h5, h6{
 }
 .header-container .logo a {
     display: inline-block;
-    margin: 30px 10px;
+    margin: 10px 10px;
 }
 
 /*-- Navigation --*/
@@ -9175,7 +9175,9 @@ display:block;
 }
 
 @media (min-width: 480px) and (max-width: 767px){
-	
+	.header-container .logo a {
+      margin: 28px 10px;
+  }
 	.our-team-img img {
 	  width: 100%;
 	}
@@ -9340,7 +9342,9 @@ display:block;
 }
 
 @media (max-width: 479px) {
-
+	.header-container .logo a {
+      margin: 28px 10px;
+  }
     .class-content h3 {
         font-size: 28px;
     }
