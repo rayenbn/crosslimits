@@ -17,6 +17,7 @@ $global_settings =Controller::global_settings();
 						<div class="footer-right">
 							<div class="line1">Copyright &copy; 2021<a href="http://crooslimits.com">CrossLimits.com </a> . All Rights Reserved.</div>
 							<div class="line2">Designed and development by <a href="http://digitafro.com">Digitafro </a></div>
+							<div class="line1"><a href="/warranty">+ Terms and Conditions</a></div>
 						</div>
 					</div>
 					<div class="social_icon">
@@ -47,7 +48,7 @@ $global_settings =Controller::global_settings();
 						<h4>Keep in touch</h4>			
 					</div>
 					<form name="" method="post"  id="send-mail">												
-						<div class="info">Lorem ipsum dolor sit amet, consectetur adi sollicitud ante tellus ornare mi, et mollis</div>						
+						<div class="info">Subscribe to our newsletter to receive coupons and photos of our newest products.</div>						
 						<div class="email">
 							<input type="text" title="E-mail" name="user[email]" class="inputbox" placeholder="Your email" >
 							<button class="button" title="Submit" type="submit"><i class="fa fa-arrow-right"></i></button>

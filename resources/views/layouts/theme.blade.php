@@ -14,6 +14,7 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('theme/images/favicon.png') }}">
 	<link rel="stylesheet" href="{{ asset('theme/css/style.css')}}" type="text/css">
 	<link rel="stylesheet" href="{{ asset('theme/css/bootstrap.css')}}" type="text/css">
 	<link rel="stylesheet" href="{{ asset('theme/css/font-awesome.css')}}" type="text/css">

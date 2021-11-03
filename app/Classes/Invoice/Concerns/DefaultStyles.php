@@ -19,13 +19,13 @@ trait DefaultStyles
                 'size' => 10,
                 'bold' => false,
                 'color' => [
-                    'argb' => Color::COLOR_WHITE,
+                    'argb' => Color::COLOR_BLACK,
                 ]
             ],
             'fill' => [
                 'fillType' => Fill::FILL_SOLID,
                 'startColor' => [
-                    'rgb' => '52A3F1',
+                    'rgb' => 'D9D9D9',
                 ],
             ],
         ];

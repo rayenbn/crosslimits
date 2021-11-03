@@ -23,7 +23,7 @@
                     @endif
                         <div class="card-body" >
                             <!-- section 2  produnts discount-->
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group row">
                                         <label  class="col-md-12 col-form-label ">Collection 1</label>
@@ -75,7 +75,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label  class="col-md-12 col-form-label ">Collection 2</label>
+                                        <label  class="col-md-12 col-form-label ">Collection 1</label>
                                             <div class="col-md-12 row">
                                                 <label for="sec2_image2" class="col-form-label ">Image</label>
                                                 <div class="input-group">
@@ -124,7 +124,7 @@
 
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label  class="col-md-12 col-form-label ">Collection 3</label>
+                                        <label  class="col-md-12 col-form-label ">Collection </label>
                                             <div class="col-md-12 row">
                                                 <label for="sec2_image2" class="col-form-label ">Image</label>
                                                 <div class="input-group">
@@ -170,9 +170,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- section 2 end produnts discount-->
-                            <hr>
+                            <!-- <hr> -->
                                 <!-- banner-->
                             <div class="row">
                                 <div class="col-md-12">

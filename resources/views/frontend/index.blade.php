@@ -54,7 +54,7 @@
     <!--End Price Table-->
 
     <div class="collection">
-        <div class="container">
+        <div class="container" style="margin-top">
             <div class="row">									
                 <div class="collection-content">
                     <div class="col-md-4 col-sm-12 col-xs-12 box">											

@@ -42,14 +42,8 @@ class WarrantyController extends Controller
     {
         abort_unless(\Gate::allows('settings_access'), 403);
         $warranty_data = [
-            'en' => [
-                'title'       => $request->input('en_title'),
-                'content'       => $request->input('en_content'),
-            ],
-            'es' => [
-                'title'       => $request->input('es_title'),
-                'content'       => $request->input('es_content'),
-            ],
+            'title'       => $request->input('title'),
+            'content'       => $request->input('content'),
          ];
 
         $warranty = Warranty::create($warranty_data);
@@ -89,14 +83,8 @@ class WarrantyController extends Controller
     {
         abort_unless(\Gate::allows('settings_access'), 403);
         $warranty_data = [
-            'en' => [
-                'title'       => $request->input('en_title'),
-                'content'       => $request->input('en_content'),
-            ],
-            'es' => [
-                'title'       => $request->input('es_title'),
-                'content'       => $request->input('es_content'),
-            ],
+            'title'       => $request->input('title'),
+            'content'       => $request->input('content'),
          ];
         $warranty = Warranty::find($id);
         $warranty->update($warranty_data);

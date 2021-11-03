@@ -135,8 +135,8 @@ class GenerateInvoicesXLSX implements ShouldQueue
      */
     public function handle()
     {
-        $this->drawing->setName('crosslimits.com');
-        $this->drawing->setDescription('crosslimits.com');
+        $this->drawing->setName('crosslimitsgear.com');
+        $this->drawing->setDescription('crosslimitsgear.com');
         $this->drawing->setPath(public_path('/theme/images/logo.png'));
         $this->drawing->setCoordinates('N4');
         $this->drawing->setOffsetY(0);
@@ -181,7 +181,7 @@ class GenerateInvoicesXLSX implements ShouldQueue
     private function setPropertiesSheet()
     {
         $this->getActiveSheet()->setTitle($this->invoiceNumber, false);
-        $this->spreadsheet->getProperties()->setCreator(env('APP_NAME', 'CROSSLIMITS.com'));
+        $this->spreadsheet->getProperties()->setCreator(env('APP_NAME', 'CROSSLIMITSGEAR.com'));
     }
 
     /**
@@ -423,7 +423,7 @@ class GenerateInvoicesXLSX implements ShouldQueue
             // ->setCellValue('L' . ($shipsStart + 3), 'BYLADEM1001 ')
 
             // ->setCellValue('C' . ($shipsStart + 8), 'Note: European companies that did not submit a EU Vat ID must add 19% value added tax. A revised invoice will be sent by 2HEX. ')
-            ->setCellValue('C' . ($shipsStart + 8), 'The terms and conditions stated on crosslimits.com apply to this invoice ')
+            ->setCellValue('C' . ($shipsStart + 8), 'The terms and conditions stated on crosslimitsgear.com apply to this invoice ')
             ;
 
         return $this;

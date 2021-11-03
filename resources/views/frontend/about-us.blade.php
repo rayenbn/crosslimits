@@ -77,7 +77,7 @@
                                         <div class="block-right-info">
                                             <div class="about-info">
                                                 <div class="icon-block">
-                                                    <i class="fa fa-tablet"></i>
+                                                <i class="fa fa-shopping-cart"></i>
                                                 </div>
                                                 <div class="about-details">
                                                     <h4 class="about-details-title">{{ $aboutus->sec_two_t1 ?? ''}}</h4>
@@ -88,7 +88,7 @@
                                             </div>
                                             <div class="about-info">
                                                 <div class="icon-block">
-                                                    <i class="fa fa-paint-brush"></i>
+                                                    <i class="fa fa-bullseye-arrow" aria-hidden="true"></i>
                                                 </div>
                                                 <div class="about-details">
                                                     <h4 class="about-details-title">{{ $aboutus->sec_two_t2 ?? ''}}</h4>
@@ -105,6 +105,17 @@
                                                     <h4 class="about-details-title">{{ $aboutus->sec_two_t3 ?? ''}}</h4>
                                                     <p>
                                                     {!! $aboutus->sec_two_desc3 ?? '' !!}
+                                                    <div class="history-skill">
+                                                        <ul>
+                                                            <li>Emergy Case</li>
+                                                            <li>Doctors Timetables</li>
+                                                            <li>Vaccinations Travel Health</li>
+                                                            <li>Women's Health</li>
+                                                            <li>Free Online Consultation</li>
+                                                            <li>General Illness or Injury</li>
+                                                            <li>Prescription Refills</li>
+                                                        </ul>
+                                                    </div>
                                                     </p>
                                                 </div>
                                             </div>
@@ -120,6 +131,50 @@
     </section>
     <!-- End Athlete Class -->
     
+    <!-- Our History -->
+    <section  class="our-team-page" style="padding-top: 0px">				
+        <div class="our-team">
+            <div class="our-team-content">
+                <div class="our-team-inner">							
+                    <div class="custom">
+                        <div class="our-team-tabs our-team-bottom our-team-fit " >
+                            <div class="our-team-panes">
+                                <div class="our-team-pane our-team-clear">											
+                                    <div class="our-history">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="history-details col-md-6 col-sm-12 col-xs-12">
+                                                    <h3>Our history</h3>
+                                                    <!-- <div class="history_desc">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor ligula sit amet ante facilisis,
+                                                        id rutrum est varius. Quisque facilisis lorem vitae lacus volutpat porttitor condimentum vitae est.
+                                                        Mauris gravida quam dui, ac aliquet quam rhoncus et. Donec in mi eget libero aliquet bibendum.
+                                                    </div> -->
+                                                    <div class="history-skill">
+                                                        <ul>
+                                                            <li>Emergy Case</li>
+                                                            <li>Doctors Timetables</li>
+                                                            <li>Vaccinations Travel Health</li>
+                                                            <li>Women's Health</li>
+                                                            <li>Free Online Consultation</li>
+                                                            <li>General Illness or Injury</li>
+                                                            <li>Prescription Refills</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>						
+    </section>
+    <!-- End Our History -->
+
     <!--Modern Equipment-->
     <section class="training modern" id="gallery">					
         <div class="wpb-wrapper">
