@@ -28,6 +28,9 @@
                             {{ trans('global.category_name') }}
                         </th>
                         <th>
+                            List Order
+                        </th>
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
@@ -40,6 +43,9 @@
                             </td>
                             <td>
                                 {{ $category->category_name ?? '' }}
+                            </td>
+                            <td>
+                                {{ $category->order ?? '' }}
                             </td>
                             <td>
                                 @can('product_edit')

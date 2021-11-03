@@ -10,13 +10,18 @@ class Category extends Model
     protected $fillable = [
         'category_name',
         'category_image',
-        'subtitle',
-        'desc',
         'slug',
         'parent_category_id',
+        'created_at',
+        'updated_at',
         'position',
-        'order'
+        'has_parent',
+        'show_in_home_page',
+        'subtitle',
+        'desc',
+        'order',
     ];
+    
     
     /**
      * The table associated with the model.

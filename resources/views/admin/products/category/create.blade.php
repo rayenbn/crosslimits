@@ -87,7 +87,7 @@
 
                     <div class="col-md-6">
                         <label class="form-check-label" for="showInHomePage">Show in home page</label>
-                        <input type="checkbox" id="showInHomePage" onclick="myFunction()">
+                        <input type="checkbox" id="showInHomePage" name="showInHomePage" onclick="myFunction()">
                     </div>
                     <div class="col-md-12 " style="display:none" id="positionInput">
                         <div class="row">

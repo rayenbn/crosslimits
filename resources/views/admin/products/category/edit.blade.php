@@ -130,6 +130,18 @@
 @section('scripts')
 @parent
 <script>
+    $(document).ready(function () {
+
+        if ('{{ $category->position  != 100}}'){
+            // document.getElementById('showInHomePage').setAttribute('checked', true);
+             // Get the output text
+            var inputBox = document.getElementById("positionInput");
+            inputBox.style.display = "block";
+        }
+        
+    });
+</script>
+<script>
 function myFunction() {
   // Get the checkbox
   var checkBox = document.getElementById("showInHomePage");
