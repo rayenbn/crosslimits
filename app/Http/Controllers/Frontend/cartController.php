@@ -93,17 +93,16 @@ class cartController extends Controller
      */
     public function submitOrder()
     {
-      
         /** @var \Illuminate\Support\Collection $cart */
         $cart = collect();
-        $products = Cart::where('created_by', '=', (string) auth()->id());
+        $products = Cart::where([['created_by', '=', (string)auth()->id()],['submited', '=', 0]]);
         $cart->put('products', $products);
 
         $totalQuantity = $cart->reduce(function ($carry, $item) {
             return $carry + $item->count();
         }, 0);
-       
-        Mail::to(auth()->user())->send($mailer = new \App\Mail\OrderSubmit(auth()->user()));
+        
+        Mail::to('myrayenemail@fgufr.com')->send($mailer = new \App\Mail\OrderSubmit(auth()->user()));
 
         $invoiceNumber = $mailer->getInvoiceNumber();
         $now = now();

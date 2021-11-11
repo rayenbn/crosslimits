@@ -111,9 +111,7 @@ class GenerateInvoicesXLSX implements ShouldQueue
      */
     protected $totalQuantity = 0;
 
-    public function __construct(
-        $products, 
-        $userInfo = null)
+    public function __construct($products,  $userInfo = null)
     {
         $this->products = $products;
         $this->pathTemplate = storage_path('app/xlsx/invoices.xlsx');
@@ -125,7 +123,7 @@ class GenerateInvoicesXLSX implements ShouldQueue
         $this->drawing = new Drawing();
         $this->date = time();
     }
-
+    
     /**
      * Execute the job.
      *
@@ -141,10 +139,9 @@ class GenerateInvoicesXLSX implements ShouldQueue
         $this->drawing->setCoordinates('N4');
         $this->drawing->setOffsetY(0);
         $this->drawing->setOffsetX(0);
-        $this->drawing->setWidth(261);
-        $this->drawing->setHeight(75);
+        $this->drawing->setWidth(241);
+        $this->drawing->setHeight(65);
         $this->drawing->setWorksheet($this->getActiveSheet());
-
         $batches = [
             \App\Classes\Invoice\Product::class => $this->products,
         ];

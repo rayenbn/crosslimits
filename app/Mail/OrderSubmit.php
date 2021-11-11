@@ -30,12 +30,11 @@ class OrderSubmit extends Mailable
      */
     public function build()
     {
-        $queryProducts = Cart::where('created_by', '=', (string) auth()->id());
-
+        $queryProducts = Cart::where([['created_by', '=', (string)auth()->id()],['submited', '=', 0]]);
         $info = auth()->user();
         
         dispatch($exporter = new \App\Jobs\GenerateInvoicesXLSX(
-            $queryProducts->get(), 
+            $queryProducts->get(),
             $this->data // send the user that is going to generate the invoice for
         ));
         
@@ -45,7 +44,7 @@ class OrderSubmit extends Mailable
 
         return $this
             ->from(config('mail.from.address'), config('mail.from.name'))
-            ->bcc(['zara@crosslimits.com'], 'Firtnessfactory')
+            ->bcc(['zara@crosslimits.com'], 'Fitnessfactory')
             ->replyTo($this->data->email, $this->data->name)
             ->subject('Crosslimits Production Order Confirmation')
             ->with([

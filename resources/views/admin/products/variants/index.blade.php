@@ -91,6 +91,9 @@
                                     {{ trans('global.variant') }}
                                 </th>
                                 <th>
+                                    Price
+                                </th>
+                                <th>
                                     &nbsp;
                                 </th>
                             </tr>

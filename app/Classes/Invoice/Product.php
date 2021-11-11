@@ -44,7 +44,7 @@ class Product extends Batch
         $this->worksheet->mergeCells(sprintf('G%s:L%s', $this->startRow, $this->startRow));
         $this->worksheet->setCellValue('M' . $this->startRow, 'Unit Price');
         $this->worksheet->setCellValue('N' . $this->startRow, 'Batch Total');
-        
+
 
         $this->startRow += 1; // after head row
         
