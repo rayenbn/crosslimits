@@ -47,6 +47,7 @@ class cartController extends Controller
         $types= json_decode($request->prodtypes);
         $color= json_decode($request->prodcolor);
         $product = Product::findOrFail($request->id);
+        dd($product);
         $typesPrice = 0;
         foreach ($types as $type)
         {

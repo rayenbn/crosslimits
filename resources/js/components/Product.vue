@@ -337,9 +337,9 @@
            
                 axios.post('/add-to-cart', formData)
                 .then((response) => {
-                    setTimeout(() => {
-                        window.location.href = "/cart";
-                    }, 1000);
+                    // setTimeout(() => {
+                    //     window.location.href = "/cart";
+                    // }, 1000);
                 })
                 .catch((error) => {
                     self.issummaring = 0;
