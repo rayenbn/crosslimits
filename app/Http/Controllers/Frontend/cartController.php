@@ -43,22 +43,25 @@ class cartController extends Controller
      */
     public function store(Request $request)
     {
-       
         $types= json_decode($request->prodtypes);
         $color= json_decode($request->prodcolor);
         $product = Product::findOrFail($request->id);
-        dd($product);
+     
+        $typesdesc = "";
+        if ($color){
+            $typesdesc .= '- '.$color->color_name. '('.$color->color_code.')'. "<br>";
+        }
+
         $typesPrice = 0;
-        foreach ($types as $type)
-        {
-            $typesPrice += $type->price;
+        if ($types){
+            foreach ($types as $type)
+            {
+                $typesPrice += $type->price;
+                $typesdesc .= '- '.$type->name.  "<br>";
+            }
         }
-        $totalPrice = $product->price + $typesPrice + $color->price;
+        $totalPrice = ($product ? $product->price : 0) + ($types ? $typesPrice : 0)+ ($color ? $color->price : 0);
         
-        $typesdesc = '- '.$color->color_name. '('.$color->color_code.')'. "<br>";
-        foreach($types as $type){
-            $typesdesc .= '- '.$type->name.  "<br>";
-        }
         
         $data =[
             'prod_id' => $request->id,
