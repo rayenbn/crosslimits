@@ -35,6 +35,7 @@ Route::group(['namespace' => 'Frontend'], function () {
     Route::post('/add-to-cart', 'cartController@store');
     Route::get('/submit_order','cartController@submitOrder')->name('orders.submit');
     Route::post('/upload-logo', 'cartController@uploadlogo');
+    Route::delete('/delete-cart-item/{id}', 'cartController@destroy')->name('orders.delete-cart-item');
 
     // Route::get('brand-new', function () {
     //     return view('frontend.resources');

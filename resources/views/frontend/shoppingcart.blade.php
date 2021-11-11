@@ -49,7 +49,14 @@
                                 <span class="cart-price">$ {{ $item->price }}</span>
                             </div>
                             <div class="item price-item col-md-2 col-sm-2 col-xs-12"><span class="cart-price">$ {{ $item->total }}</span></div>
-                            <div class="item delete-item col-md-1 col-sm-1 col-xs-12"><a href="#"><i class="fa fa-times-circle"></i></a></div>
+                            <div class="item delete-item col-md-1 col-sm-1 col-xs-12">
+                             
+                                <form action="{{ route('orders.delete-cart-item', $item->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                    <button type="submit" style="border: none;background: none;"><i class="fa fa-times-circle"></i></button>
+                                </form>
+                            </div>
                         </div>
                         @endforeach
                     </div>

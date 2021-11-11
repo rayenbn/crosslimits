@@ -377,8 +377,8 @@ class GenerateInvoicesXLSX implements ShouldQueue
             ],
             'borders' => [
                 'top' => [
-                    'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN,
-                    'color' => ['rgb' => 'F2F2F2'],
+                    'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_DOUBLE,
+                    'color' => ['rgb' => '000000'],
                 ],
             ],
         ]);
@@ -386,43 +386,40 @@ class GenerateInvoicesXLSX implements ShouldQueue
 
         $this
             ->getActiveSheet()
-            ->setCellValue('C' . $shipsStart = $startTotal + 10, 'Bank information ')
-            ->setCellValue('C' . ($shipsStart + 2), 'bank:')
-            ->setCellValue('F' . ($shipsStart + 2),  '*******************')
+            ->setCellValue('C' . $shipsStart = $startTotal + 10, 'BANK INFORMATION: USD ACCOUNT ')
+            ->setCellValue('C' . ($shipsStart + 2), 'NAME OF THE BANK: ')
+            ->setCellValue('F' . ($shipsStart + 2),  'BANK OF JINHUA')
             
-            ->setCellValue('C' . ($shipsStart + 3), 'Recipient: ')
-            ->setCellValue('F' . ($shipsStart + 3), '**************')
+            ->setCellValue('C' . ($shipsStart + 3), 'RECIPIENT: ')
+            ->setCellValue('F' . ($shipsStart + 3), 'MEILA TRADING COMPANY LIMITED')
 
             ->setCellValue('C' . ($shipsStart + 4), 'USD ACCOUNT IBAN: ')
-            ->setCellValue('F' . ($shipsStart + 4), '**************************')
+            ->setCellValue('F' . ($shipsStart + 4), 'NRA1456993009000304')
 
-            ->setCellValue('C' . ($shipsStart + 5), 'EURO ACCOUNT IBAN: ')
-            ->setCellValue('F' . ($shipsStart + 5), '**************************')
+            ->setCellValue('C' . ($shipsStart + 5), 'BIC / SWIFT: ')
+            ->setCellValue('F' . ($shipsStart + 5), 'JHCBCNBJ')
 
-            ->setCellValue('C' . ($shipsStart + 6), 'BIC / SWIFT: ')
-            ->setCellValue('F' . ($shipsStart + 6), '**********')
-
-
-
-            ->setCellValue('J' . ($shipsStart + 2), 'Recipient Add: ')
-            ->setCellValue('k' . ($shipsStart + 2), '**************************')
-
-            ->setCellValue('J' . ($shipsStart + 4), 'Bank: ')
-            ->setCellValue('k' . ($shipsStart + 4), '***************************')
-
-            ->setCellValue('J' . ($shipsStart + 5), 'Bank Add: ')
-            ->setCellValue('k' . ($shipsStart + 5), '****************************************')
+            // ->setCellValue('C' . ($shipsStart + 6), 'BIC / SWIFT: ')
+            // ->setCellValue('F' . ($shipsStart + 6), '   ')
 
 
+            ->setCellValue('J' . $shipsStart = $startTotal + 10, 'BANK INFORMATION: EURO ACCOUNT ')
+            ->setCellValue('J' . ($shipsStart + 2), 'BENEFICIARY NAME :')
+            ->setCellValue('k' . ($shipsStart + 2), 'MEILA TRADING COMPANY LIMITED. ')
+
+            ->setCellValue('J' . ($shipsStart + 3), 'A/C NO: ')
+            ->setCellValue('k' . ($shipsStart + 3), 'NRA3856993009000132')
+
+            ->setCellValue('J' . ($shipsStart + 4), 'Bank Add: ')
+            ->setCellValue('k' . ($shipsStart + 4), 'No258-28 CHENGBEI ROAD YIWU CHINA.')
+
+            ->setCellValue('J' . ($shipsStart + 5), ' SWIFT CODE:')
+            ->setCellValue('k' . ($shipsStart + 5), 'YZBKCN2N')
+
+            ->setCellValue('J' . ($shipsStart + 5), 'BENEFICIARY BANK: ')
+            ->setCellValue('k' . ($shipsStart + 5), 'YINZHOU BANK.')
 
 
-            // ->setCellValue('K' . ($shipsStart + 2), 'IBAN/ACCOUNT: ')
-            // ->setCellValue('L' . ($shipsStart + 2), 'DE50 1203 0000 1018 3895 26 ')
-
-            // ->setCellValue('K' . ($shipsStart + 3), 'BIC / SWIFT: ')
-            // ->setCellValue('L' . ($shipsStart + 3), 'BYLADEM1001 ')
-
-            // ->setCellValue('C' . ($shipsStart + 8), 'Note: European companies that did not submit a EU Vat ID must add 19% value added tax. A revised invoice will be sent by 2HEX. ')
             ->setCellValue('C' . ($shipsStart + 8), 'The terms and conditions stated on crosslimitsgear.com apply to this invoice ')
             ;
 
