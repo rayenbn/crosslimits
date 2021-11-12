@@ -136,7 +136,7 @@ class GenerateInvoicesXLSX implements ShouldQueue
         $this->drawing->setName('crosslimitsgear.com');
         $this->drawing->setDescription('crosslimitsgear.com');
         $this->drawing->setPath(public_path('/theme/images/logo.png'));
-        $this->drawing->setCoordinates('N4');
+        $this->drawing->setCoordinates('L4');
         $this->drawing->setOffsetY(0);
         $this->drawing->setOffsetX(0);
         $this->drawing->setWidth(241);

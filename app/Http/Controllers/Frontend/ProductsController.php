@@ -29,6 +29,9 @@ class ProductsController extends Controller
         $products = $category->products();
         $productpage = ProductPage::first();
         $categories = Category::orderBy('order','asc')->get();
+        // $categories = Category::with('children')
+        //     ->whereNull('parent_category_id')
+        //     ->get(); this for load with parents and child
         return view('frontend.products', compact('products', 'productpage', 'categories'));
     }
 
