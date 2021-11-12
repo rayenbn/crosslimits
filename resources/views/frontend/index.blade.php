@@ -4,7 +4,7 @@
 @include('partials.slider', $sliders)
 <div class="contents-main" id="contents-main">	
     <!--Price Table-->
-    <section class="price-table">
+    <!-- <section class="price-table">
         <div class="container">
             <div class="row">							
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!--End Price Table-->
 
     <div class="collection">

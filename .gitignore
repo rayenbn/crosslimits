@@ -16,3 +16,4 @@ npm-debug.log
 yarn-error.log
 public/js/app.js
 webpack.mix.js
+resources/js/app.js

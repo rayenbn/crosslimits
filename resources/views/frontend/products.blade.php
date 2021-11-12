@@ -25,7 +25,7 @@
                         <p class="amount">
                             <strong>SHOWING {{ count($products)}} RESULTS</strong>
                         </p>
-                        <div class="sorter">
+                        <!-- <div class="sorter">
                             <div class="sort-by">
                                 <select onchange="setLocation(this.value)">
                                     <option selected="selected" value="">Default sorting</option>
@@ -34,11 +34,11 @@
                                     <option value="">Price</option>
                                 </select>
                             </div>                                                
-                            <!-- <p class="view-mode">
+                            <p class="view-mode">
                                 <strong class="grid-active" title="Grid"><i class="fa fa-th-large"></i></strong>
                                 <a class="list" title="List" href="product-listing-row.html"><i class="fa fa-th-list"></i></a>
-                            </p> -->
-                        </div>
+                            </p>
+                        </div> -->
                     </div>
                     <div class="row">
                         @foreach($products as $key => $product)

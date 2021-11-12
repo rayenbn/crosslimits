@@ -57,6 +57,18 @@ class Product extends Batch
             if($index != (count($this->items) - 1)){
                 $styleArray = [
                     'borders' => [
+                        'left' => [
+                            'borderStyle' => Border::BORDER_DOUBLE,
+                            'color' => ['argb' => '0000000'],
+                        ],
+                        'top' => [
+                            'borderStyle' => Border::BORDER_DOUBLE,
+                            'color' => ['argb' => '0000000'],
+                        ],
+                        'right' => [
+                            'borderStyle' => Border::BORDER_DOUBLE,
+                            'color' => ['argb' => '0000000'],
+                        ],
                         'bottom' => [
                             'borderStyle' => Border::BORDER_DOUBLE,
                             'color' => ['argb' => '0000000'],
@@ -145,16 +157,17 @@ class Product extends Batch
             ->getFill()
             ->setFillType(Fill::FILL_SOLID)
             ->getStartColor()
-            ->setARGB('52A3F1');
+            ->setARGB('d9d9d9');
 
         $this->worksheet->getStyle(sprintf('C%s:N%s', $this->startRow - 1, $this->startRow - 1))
                 ->getFont()
                 ->setSize(10)
+                ->setBold( true )
                 ->getColor()
-                ->setARGB(Color::COLOR_WHITE);
+                ->setARGB(Color::COLOR_BLACK);
         $this->worksheet
             ->getRowDimension($this->startRow - 1)
-            ->setRowHeight(40);
+            ->setRowHeight(20);
 
         return $this;
     }

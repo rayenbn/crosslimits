@@ -17,7 +17,7 @@ trait DefaultStyles
         return [
             'font' => [
                 'size' => 10,
-                'bold' => false,
+                'bold' => true,
                 'color' => [
                     'argb' => Color::COLOR_BLACK,
                 ]
@@ -26,6 +26,24 @@ trait DefaultStyles
                 'fillType' => Fill::FILL_SOLID,
                 'startColor' => [
                     'rgb' => 'D9D9D9',
+                ],
+            ],
+            'borders' => [
+                'left' => [
+                    'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_DOUBLE,
+                    'color' => ['argb' => '0000000'],
+                ],
+                'top' => [
+                    'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_DOUBLE,
+                    'color' => ['rgb' => '000000'],
+                ],
+                'right' => [
+                    'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_DOUBLE,
+                    'color' => ['argb' => '0000000'],
+                ],
+                'bottom' => [
+                    'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_DOUBLE,
+                    'color' => ['argb' => '0000000'],
                 ],
             ],
         ];

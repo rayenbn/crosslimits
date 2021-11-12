@@ -256,6 +256,24 @@ class GenerateInvoicesXLSX implements ShouldQueue
                     'rgb' => 'ffffff'
                 ],
             ],
+            'borders' => [
+                'left' => [
+                    'borderStyle' => Border::BORDER_DOUBLE,
+                    'color' => ['rgb' => '000000'],
+                ],
+                'top' => [
+                    'borderStyle' => Border::BORDER_DOUBLE,
+                    'color' => ['rgb' => '000000'],
+                ],
+                'right' => [
+                    'borderStyle' => Border::BORDER_DOUBLE,
+                    'color' => ['argb' => '0000000'],
+                ],
+                'bottom' => [
+                    'borderStyle' => Border::BORDER_DOUBLE,
+                    'color' => ['argb' => '0000000'],
+                ],
+            ],
         ]);
 
         $startTotal += 1;
@@ -301,12 +319,30 @@ class GenerateInvoicesXLSX implements ShouldQueue
             ->getNumberFormat()
             ->setFormatCode(NumberFormat::FORMAT_CURRENCY_USD_SIMPLE);
 
-            $this->getActiveSheet()->getStyle(sprintf('B%s:O%s', $startTotal , $startTotal + 18))
+            $this->getActiveSheet()->getStyle(sprintf('C%s:N%s', $startTotal , $startTotal + 20))
             ->applyFromArray([
                 'fill' => [
                     'fillType' => Fill::FILL_SOLID,
                     'startColor' => [
                         'rgb' => 'ffffff'
+                    ],
+                ],
+                'borders' => [
+                    'left' => [
+                        'borderStyle' => Border::BORDER_DOUBLE,
+                        'color' => ['rgb' => '000000'],
+                    ],
+                    'top' => [
+                        'borderStyle' => Border::BORDER_DOUBLE,
+                        'color' => ['rgb' => '000000'],
+                    ],
+                    'right' => [
+                        'borderStyle' => Border::BORDER_DOUBLE,
+                        'color' => ['argb' => '0000000'],
+                    ],
+                    'bottom' => [
+                        'borderStyle' => Border::BORDER_DOUBLE,
+                        'color' => ['argb' => '0000000'],
                     ],
                 ],
             ]);
@@ -373,7 +409,7 @@ class GenerateInvoicesXLSX implements ShouldQueue
                 ],
             ],
             'borders' => [
-                'top' => [
+                'bottom' => [
                     'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_DOUBLE,
                     'color' => ['rgb' => '000000'],
                 ],
@@ -416,8 +452,7 @@ class GenerateInvoicesXLSX implements ShouldQueue
             ->setCellValue('J' . ($shipsStart + 5), 'BENEFICIARY BANK: ')
             ->setCellValue('k' . ($shipsStart + 5), 'YINZHOU BANK.')
 
-
-            ->setCellValue('C' . ($shipsStart + 8), 'The terms and conditions stated on crosslimitsgear.com apply to this invoice ')
+            // ->setCellValue('C' . ($shipsStart + 8), 'The terms and conditions stated on crosslimitsgear.com apply to this invoice ')
             ;
 
         return $this;
