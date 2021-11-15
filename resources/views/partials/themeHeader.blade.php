@@ -45,7 +45,6 @@ $global_settings = Controller::global_settings();
 								<a href="#">My account</a>
 								<!-- <h3 class="title">Your Profile</h3> -->
 								<ul class="child-nav">
-									<li><a href="about-us.html">About us</a></li>
 									<li><a href="/my-profile#tabs-1">My info</a></li>
 									<li><a href="/my-profile#tabs-2">My orders</a></li>
 									<li><a href="#" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">Logout</a></li>

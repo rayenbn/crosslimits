@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="cont-headding" style="float: none;">
                                         <h5>Telephone </h5>
-                                        <p>{{ $contactus->phone ?? ''}}  - {{ $contactus->mobile ?? ''}}</p>
+                                        <p>{{ $contactus->phone ?? ''}}  {{ $contactus->phone && $contactus->mobile ? '-' : ''}} {{ $contactus->mobile ?? ''}}</p>
                                     </div>
                                 </li>
                             </ul>
@@ -105,7 +105,7 @@
                                                         <input style="color: #fff" type="email" name="email" class="control" required="required" placeholder="Your Email">
                                                     </div>			
                                                     <div class="form-group col-md-12">
-                                                        <input style="color: #fff" type="text" name="phone" class="control" placeholder="+12345678932 *">
+                                                        <input style="color: #fff" type="text" name="phone" class="control" placeholder="Phone number *">
                                                     </div>						
                                                     <div class="form-group col-md-12">
                                                         <textarea style="color: #fff" name="message" id="message" required="required" class="control" rows="8" placeholder="Your Message"></textarea>

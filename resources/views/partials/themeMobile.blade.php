@@ -27,6 +27,27 @@ use Illuminate\Support\Facades\Route;
 			<a href="{{ route('blog') }}">Blog</a>
 		</li>
 		<li><a href="{{ route('contactus') }}">Contact us</a></li>
+		@guest
+		<li>
+			<a href="/login">My account</a>
+			<!-- <h3 class="title">Your Profile</h3> -->
+			<ul class="child-nav">
+				<li><a href="/login">Login</a></li>
+				<li><a href="/register">Register</a></li>
+			</ul>
+		</li>
+		@endguest
+		@auth
+		<li>
+			<a href="#">My account</a>
+			<!-- <h3 class="title">Your Profile</h3> -->
+			<ul class="child-nav">
+				<li><a href="/my-profile#tabs-1">My info</a></li>
+				<li><a href="/my-profile#tabs-2">My orders</a></li>
+				<li><a href="#" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">Logout</a></li>
+			</ul>
+		</li>
+		@endauth
 	</ul>
 </div>
 <!--Menu Mobile-->

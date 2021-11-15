@@ -15,7 +15,7 @@ $global_settings =Controller::global_settings();
 				<div class="col-md-4 col-sm-4 col-xs-12 infomation">
 					<div class="copy-right">
 						<div class="footer-right">
-							<div class="line1">Copyright &copy; 2021<a href="http://crooslimits.com">CrossLimits.com </a> . All Rights Reserved.</div>
+							<div class="line1">Copyright &copy; 2021<a href="http://www.crosslimitsgear.com/"> CrossLimitsgear.com </a>. All Rights Reserved.</div>
 							<div class="line2">Designed and development by <a href="http://digitafro.com">Digitafro </a></div>
 							<div class="line1"><a href="/warranty">+ Terms and Conditions</a></div>
 						</div>
@@ -50,7 +50,7 @@ $global_settings =Controller::global_settings();
 					<form name="" method="post"  id="send-mail">												
 						<div class="info">Subscribe to our newsletter to receive coupons and photos of our newest products.</div>						
 						<div class="email">
-							<input type="text" title="E-mail" name="user[email]" class="inputbox" placeholder="Your email" >
+							<input type="text" title="E-mail" name="user" class="inputbox" placeholder="Your email" >
 							<button class="button" title="Submit" type="submit"><i class="fa fa-arrow-right"></i></button>
 						</div>
 					</form>
