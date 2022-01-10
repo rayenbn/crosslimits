@@ -6763,6 +6763,7 @@ img.out-pos {
 }
 .product-detail .product-collateral .box-collateral p{
     margin: 0;
+    font-weight: normal;
 }
 .product-detail .product-collateral .box-collateral ul{
     margin: 10px 0 10px 10px;
