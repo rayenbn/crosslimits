@@ -42,11 +42,11 @@
                 <div class="price-box">	
                    
                     <span class="special-price">Unit Price: 
-                        <span v-if="hasAuthUser">{{ totalprice }}</span>
+                        <span v-if="hasAuthUser">{{ totalprice.toFixed(2) }}</span>
                         <span v-else><a href="/login">Login to see price</a></span>
                     </span>
                     <span class="special-price">Total Price:  
-                        <span v-if="hasAuthUser">{{ totalprice * quantity }}</span>
+                        <span v-if="hasAuthUser">{{ (totalprice * quantity).toFixed(2) }}</span>
                         <span v-else><a href="/login">Login to see price</a></span>
                     </span>
                     
