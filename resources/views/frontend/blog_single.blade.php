@@ -39,7 +39,7 @@
                     <!--  Blog -->
                     <div class="blog-page">
                         <section class="blog-listing">
-                            <section class="blog-item">
+                            <section class="blog-item" style="background: #ffffff;">
                                 <div class="img-blog">
                                     <img src="../storage/blogs/thumbnail/{{ $blog->image ?? ''}}" alt=""/>
                                 </div>
@@ -53,7 +53,7 @@
                                                 <h3>{{ $blog->title ?? '' }}</h3>
                                             </div>	
                                         </div>
-                                        <div class="details-desc-full">
+                                        <div class="details-desc-full" style="font-size: 15px;font-weight: 400">
                                         {!! $blog->text !!}
                                         </div>
                                         
